@@ -27,7 +27,7 @@ export default function Settings() {
                         <li
                             key={i}
                             className={`
-                            px-[16px] py-[10px] hover:bg-gray_50 whitespace-nowrap
+                            px-[16px] py-[10px] hover:bg-gray_50 whitespace-nowrap cursor-pointer
                             ${tabs.length !== (i + 1) ? 'border-r border-r-gray_300' : ''}
                             `}
                         >
@@ -49,7 +49,7 @@ export default function Settings() {
                     <div className="flex text-14 mb-[16px]">
                         <DotCheckbox
                             onClick={() => setEmail('account')}
-                            selected={email === 'account' ? true : false}
+                            selected={email === 'account'}
                         />
                         <div className="ml-[8px] mt-[-3px]">
                             <p className="text-gray_700 font-medium">Send to my account email</p>
@@ -59,7 +59,7 @@ export default function Settings() {
                     <div className="flex text-14">
                         <DotCheckbox
                             onClick={() => setEmail('alternative')}
-                            selected={email === 'alternative' ? true : false}
+                            selected={email === 'alternative'}
                         />
                         <div className="ml-[8px] mt-[-3px] w-full">
                             <p className="text-gray_700 font-medium mb-[12px]">Send to an alternative email</p>
