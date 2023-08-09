@@ -8,7 +8,7 @@ export default function CardDetails({ icon, expiry, title, className }) {
     return (
         <div
             className={`
-            flex w-full p-[16px] border rounded-[8px] cursor-pointer ${className}
+            flex w-full p-[16px] border rounded-[8px] cursor-pointer hover:border-primary_300 ${className}
             ${selected ? 'border-primary_300 bg-primary_50' : 'border-gray_200'}
             `}
             onClick={() => setSelected(!selected)}
